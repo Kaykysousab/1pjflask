@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <div class="form-div">
+    <form method="POST">
+        <h1 class="text-h1">Formulario de Contato</h1>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="preencher com seus dados" required>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="preencher com seus dados" required>
+        <label for="msg">msg</label>
+        <input type="text" id="msg" name="msg" placeholder="preencher dados" required>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+   <style>
+
+    body{
+        margin: 250px;
+        background-color: rgba(148, 229, 243, 0.616);
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        display:flex
+    }
+
+    .form-div {
+        width: 25rem;
+        height: 28rem;
+        background-color: rgb(39, 96, 129);
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid #000000;
+        border-radius: 3%;
+        box-shadow: 3px 5px 10px #3f3e3e;
+    }
+
+    label {
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    form {
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .text-h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+    }
+
+    input {
+        padding: 0.5rem 3rem;
+        color: rgb(0, 0, 0);
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+        outline: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: rgba(215, 238, 211, 0.822);
+        }
+
+        input:focus {
+            border: 1px solid #ffffff;
+        }
+
+        button {
+            padding: 0.4rem 3rem;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: brown;
+            border: none;
+            box-shadow: 3px 3px 3px #000000;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(133, 51, 51);
+            color: white;
+        }
+   </style>
+</body>
+</html>
